@@ -1,0 +1,18 @@
+Annabel Beichman
+Homework 1 (1/8/15)
+
+1. ls [A-Z]* : this displays all files and directories in the current folder including their subfiles/directories one level down
+2. cp *.sh /tmp : this copies any files with the extension .sh to the /tmp folder
+3. man pwd : opens the manual page for the command pwd (which tells you your location)
+4. cd ~ : this moves you to your home directory
+5. mkdir -p /test1/test2/test3 : this creates a nested set of directories if they don't already exist
+6. cp -r /tmp . : this recursively copies all of the /tmp folder to the current folder
+7. ls | less : this pipes the output of ls (files and directories in the current folder) into less which shows the top portion of a file
+8. head -n 24 test.txt >> abc.txt: this appends the top 24 lines of test.txt to abc.txt
+9. echo "aaa" > aaa.txt : this creates (or replaces) the text of aaa.txt with "aaa"
+10. ps -u sallesina: this displays all processes running for user sallesina
+11. top: displays all system processes
+12. ls | grep .sh | xargs mv /tmp : this should move all files ending in .sh to the temp folder
+but I couldn't get it to work as written in the text, but this worked: ls | grep .sh | xargs -I {} mv {} /tmp
+13. du -sk /home/* | sort -r -n | head -10: this displays the top 10 largest files
+14. sort -r names.txt: this sorts a list of names into reverse alphabetical order
