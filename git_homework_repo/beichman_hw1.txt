@@ -19,3 +19,5 @@ but I couldn't get it to work as written in the text, but this worked: ls | grep
 
 
 I am making changes to this homework to practice with git!
+
+Daniel: I am adding more changes to practice as well !!!!!
