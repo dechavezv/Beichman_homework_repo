@@ -1,0 +1,28 @@
+Annabel Beichman
+Create regular expressions that search for each of the following.
+
+    Passwords that contain your lowercase first name
+    Passwords that start with the letter a
+    Passwords that only consist of numbers
+    Passwords that have any 5 letters followed by two numbers
+    Passwords that contain a repeated 3 letter pattern (e.g., dogdog or catcat)
+
+Hint: If you are using grep be sure to single-quote your regular expression: grep '...' 10k-common-passwords.txt.
+
+1. lower case first name:
+grep annabel 10k-common-passwords.txt 
+annabell
+
+2. start with a:
+grep '^a.' 10k-common-passwords.txt
+
+3. only #s:
+grep -E '^\d+$' 10k-common-passwords.txt #need start (^) and end ($)anchors
+
+4. 5 letters, 2 #s:
+grep -E -i '^[A-Z]{5}\d{2}$' 10k-common-passwords.txt
+
+5. repeated patterns: 
+grep -E -i '^([a-z][a-z][a-z])\1+$' 10k-common-passwords.txt 
+
+#so the \1 field can be used within the expression, not just in replace
