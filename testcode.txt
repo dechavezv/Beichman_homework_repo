@@ -1,0 +1,6 @@
+This is some test code
+for practicing git
+
+how cool.
+
+ugh I'm sick
